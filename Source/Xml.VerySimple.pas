@@ -806,6 +806,7 @@ begin
   Result := ReplaceStr(Result, '&quot;', '"');
   Result := ReplaceStr(Result, '&apos;', '''');
   Result := ReplaceStr(Result, '&amp;', '&');
+  Result := ReplaceStr(Result, '&#013;&#010;', sLineBreak);
 end;
 
 procedure TXmlVerySimple.SetText(const Value: String);
